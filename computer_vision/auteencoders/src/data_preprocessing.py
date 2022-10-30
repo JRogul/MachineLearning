@@ -12,9 +12,9 @@ def return_dataloaders(train_batch_size, val_batch_size, test_batch_size):
     )
 
     train_dataset = datasets.MNIST(root="C:\\Users\\giga\\Desktop\\gitt\\MachineLearning\\computer_vision\\auteencoders\\data",
-                                   train=True, download=False, transform=train_transforms)
+                                   train=True, download=True, transform=train_transforms)
     val_dataset = datasets.MNIST(root='C:\\Users\\giga\\Desktop\\gitt\\MachineLearning\\computer_vision\\auteencoders\\data',
-                                 train=False, download=False, transform=train_transforms)
+                                 train=False, download=True, transform=train_transforms)
     train_dataloader = torch.utils.data.DataLoader(train_dataset,
                                                    batch_size=train_batch_size,
                                                    num_workers=0,
