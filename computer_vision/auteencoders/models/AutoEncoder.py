@@ -42,5 +42,3 @@ class AutoEncoder_mnist(nn.Module):
         x = self.decoder(x)
         return x
 
-
-model = AutoEncoder_mnist()
