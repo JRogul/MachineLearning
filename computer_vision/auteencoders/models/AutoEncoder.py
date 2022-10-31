@@ -1,6 +1,5 @@
 import torch.nn as nn
 
-
 class AutoEncoder_mnist(nn.Module):
     def __init__(self):
         super().__init__()
