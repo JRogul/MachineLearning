@@ -1,6 +1,5 @@
 import torch.nn as nn
 
-
 class AutoEncoder_mnist(nn.Module):
     def __init__(self):
         super().__init__()
@@ -35,6 +34,7 @@ class AutoEncoder_mnist(nn.Module):
             nn.LeakyReLU(),
             nn.ConvTranspose2d(in_channels=3, out_channels=1, kernel_size=3, stride=2, padding=1, output_padding=1),
             nn.BatchNorm2d(1),
+            nn.Tanh()
         )
 
     def forward(self, x):
