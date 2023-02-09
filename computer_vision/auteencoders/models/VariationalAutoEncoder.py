@@ -5,16 +5,20 @@ class VariationalAutoEncoder(nn.Module):
     def __init__(self):
         super().__init__()
         self.encoder = nn.Sequential(
-            nn.Linear(784, 128),
-            nn.ReLU())
+            nn.Linear(784, 256),
+            nn.LeakyReLU(),
+            nn.Linear(256, 128),
+            nn.LeakyReLU()),
 
         self.mu = nn.Linear(128, 2)
         self.sigma = nn.Linear(128, 2)
 
         self.decoder = nn.Sequential(
             nn.Linear(2, 128),
-            nn.ReLU(),
-            nn.Linear(128, 784),
+            nn.LeakyReLU(),
+            nn.Linear(128, 256),
+            nn.LeakyReLU(),
+            nn.Linear(128, 256),
             nn.Sigmoid()
         )
     def encode(self, x):

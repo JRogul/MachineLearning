@@ -2,8 +2,7 @@ import torch
 from torchvision import transforms
 import torchvision.datasets as datasets
 
-
-def return_dataloaders(train_batch_size, val_batch_size, test_batch_size):
+def return_dataloaders(train_batch_size, val_batch_size):
 
     train_transforms = transforms.Compose(
         [
@@ -17,15 +16,11 @@ def return_dataloaders(train_batch_size, val_batch_size, test_batch_size):
                                  train=False, download=True, transform=train_transforms)
     train_dataloader = torch.utils.data.DataLoader(train_dataset,
                                                    batch_size=train_batch_size,
-                                                   num_workers=0,
+                                                   num_workers=1,
                                                    shuffle=True)
     val_dataloader = torch.utils.data.DataLoader(val_dataset,
                                                  batch_size=val_batch_size,
                                                  shuffle=False,
-                                                 num_workers=0)
-    test_dataloader = torch.utils.data.DataLoader(val_dataset,
-                                                  batch_size=test_batch_size,
-                                                  shuffle=False,
-                                                  num_workers=0)
-    return train_dataloader, val_dataloader, test_dataloader
+                                                 num_workers=1)
 
+    return train_dataloader, val_dataloader
