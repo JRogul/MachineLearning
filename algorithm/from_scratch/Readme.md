@@ -42,12 +42,10 @@
 |	Sunny|	Mild|	High  |	True |	No  |
 
 
+## Logistic Regression
+
+Simple implementation of logistic regression using numpy with artifically generated data.
 
 ## Linear Regression
 
-Simple linear regression created with numpy tested on artifically generated data
-
-## Logistic Regression
-
-Simple logistic regression created with numpy tested on artifically generated data
-
+Simple implementation of linear regression using numpy with artifically generated data.
