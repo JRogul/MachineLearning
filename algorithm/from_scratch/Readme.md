@@ -40,3 +40,14 @@
 |Overcast|	Mild|	High  |	True |	Yes |
 |Overcast|	Hot	|Normal  |	False|	Yes |
 |	Sunny|	Mild|	High  |	True |	No  |
+
+
+
+## Linear Regression
+
+Simple linear regression created with numpy tested on artifically generated data
+
+## Logistic Regression
+
+Simple logistic regression created with numpy tested on artifically generated data
+
