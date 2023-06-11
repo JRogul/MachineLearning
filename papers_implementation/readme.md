@@ -14,8 +14,7 @@ Working implementation for all possible VGG models implementation.
 
 ## You Only Look Once: Unified, Real-Time Object Detection
 
-[paper](https://arxiv.org/pdf/1506.02640.pdf)
+## ImageNet Classification with Deep Convolutional Neural Networks
+[paper] (https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
 
-as well as implementing appropriate metrics from scratch.
-
-Work in progress
+Implementation of AlexNet
