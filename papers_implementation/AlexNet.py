@@ -28,12 +28,14 @@ class AlexNet(nn.Module):
         )
         self.linear = nn.Sequential(
             nn.Linear(9216, 4096, bias=False),
+            nn.Dropout(0.5),
             nn.ReLU(),
             nn.Linear(4096, 4096, bias=False),
+            nn.Dropout(0.5),
             nn.ReLU(),
             nn.Linear(4096, 1000, bias=False)
         )
-    
+
     def forward(self, x):
         out = self.conv_layers(x)
         out = torch.flatten(out, start_dim=1)
