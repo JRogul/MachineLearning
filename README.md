@@ -21,6 +21,7 @@ Each algorithm has its own Jupyter notebook, containing:
 - Linear Regression
 - Logistic Regression
 - Naive Bayes
+- Nearest Neighbor and K-Nearest Neighbors
 ---
 
 ### 2. Computer Vision
@@ -47,6 +48,5 @@ Implementations of various foundational neural networks for computer vision task
 ### 4. Simple Projects
 
 This section features various simple projects developed for understanding and practice, mostly done and published on kaggle.
-They
 
 ---
