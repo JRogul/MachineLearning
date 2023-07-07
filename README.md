@@ -43,6 +43,7 @@ Implementations of various foundational neural networks for computer vision task
 - AlexNet
 - VGG
 - ResNet
+- Unet
 ---
 
 ### 4. Simple Projects
